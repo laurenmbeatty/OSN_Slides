@@ -1,0 +1,13 @@
+@import "partials/variables";
+
+@define-mixin link-style {
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $green;
+  margin-top: 5px;
+}
+.program-link a {
+  @mixin link-style;
+}

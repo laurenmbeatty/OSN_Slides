@@ -1,0 +1,65 @@
+.grid {
+  display: grid;
+  align-content: stretch;
+  grid-template: "a . b c d " 221px ". . . . . " 20px "g g g h i " 221px ". . . h . " 20px "j j j h k " 221px ". . . . . " 20px "l . m n o " 221px "l . . n . " 20px "l . p n q" 221px ". . . . . " 20px "r r r s t " 221px ". . . . t " 20px "u u u v t " 221px / 25% 1fr 25% 25% 25%
+}
+.grid > .item1 {
+  grid-area: a
+}
+.grid > .item2 {
+  grid-area: b
+}
+.grid > .item3 {
+  grid-area: c
+}
+.grid > .item4 {
+  grid-area: d
+}
+.grid > .wide1 {
+  grid-area: g
+}
+.grid > .tall1 {
+  grid-area: h
+}
+.grid > .item5 {
+  grid-area: i
+}
+.grid > .wide2 {
+  grid-area: j
+}
+.grid > .item6 {
+  grid-area: k
+}
+.grid > .tall2 {
+  grid-area: l
+}
+.grid > .item7 {
+  grid-area: m
+}
+.grid > .tall3 {
+  grid-area: n
+}
+.grid > .item8 {
+  grid-area: o
+}
+.grid > .item9 {
+  grid-area: p
+}
+.grid > .item10 {
+  grid-area: q
+}
+.grid > .wide3 {
+  grid-area: r
+}
+.grid > .item11 {
+  grid-area: s
+}
+.grid > .tall4 {
+  grid-area: t
+}
+.grid > .wide4 {
+  grid-area: u
+}
+.grid > .item12 {
+  grid-area: v
+}

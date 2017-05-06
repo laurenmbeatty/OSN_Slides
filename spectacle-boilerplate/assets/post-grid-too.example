@@ -1,0 +1,336 @@
+@supports not (grid-template-areas:"test") {
+  .grid {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 1667px
+  }
+  .grid > .item1 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 0;
+    left: 0
+  }
+  .grid > .item2 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 0;
+    left: 25%
+  }
+  .grid > .item3 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 0;
+    left: 50%
+  }
+  .grid > .item4 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 0;
+    left: 75%
+  }
+  .grid > .wide1 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 50%;
+    top: 241px;
+    left: 0
+  }
+  .grid > .tall1 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 462px;
+    width: 25%;
+    top: 241px;
+    left: 50%
+  }
+  .grid > .item5 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 241px;
+    left: 75%
+  }
+  .grid > .wide2 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 50%;
+    top: 482px;
+    left: 0
+  }
+  .grid > .item6 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 482px;
+    left: 75%
+  }
+  .grid > .tall2 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 462px;
+    width: 25%;
+    top: 723px;
+    left: 0
+  }
+  .grid > .item7 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 723px;
+    left: 25%
+  }
+  .grid > .tall3 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 462px;
+    width: 25%;
+    top: 723px;
+    left: 50%
+  }
+  .grid > .item8 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 723px;
+    left: 75%
+  }
+  .grid > .item9 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 964px;
+    left: 25%
+  }
+  .grid > .item10 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 964px;
+    left: 75%
+  }
+  .grid > .wide3 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 50%;
+    top: 1205px;
+    left: 0
+  }
+  .grid > .item11 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 1205px;
+    left: 50%
+  }
+  .grid > .tall4 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 462px;
+    width: 25%;
+    top: 1205px;
+    left: 75%
+  }
+  .grid > .wide4 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 50%;
+    top: 1446px;
+    left: 0
+  }
+  .grid > .item12 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 1446px;
+    left: 50%
+  }
+}
+@media screen and (min-width:0\0) {
+  .grid {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 1667px
+  }
+  .grid > .item1 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 0;
+    left: 0
+  }
+  .grid > .item2 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 0;
+    left: 25%
+  }
+  .grid > .item3 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 0;
+    left: 50%
+  }
+  .grid > .item4 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 0;
+    left: 75%
+  }
+  .grid > .wide1 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 50%;
+    top: 241px;
+    left: 0
+  }
+  .grid > .tall1 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 462px;
+    width: 25%;
+    top: 241px;
+    left: 50%
+  }
+  .grid > .item5 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 241px;
+    left: 75%
+  }
+  .grid > .wide2 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 50%;
+    top: 482px;
+    left: 0
+  }
+  .grid > .item6 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 482px;
+    left: 75%
+  }
+  .grid > .tall2 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 462px;
+    width: 25%;
+    top: 723px;
+    left: 0
+  }
+  .grid > .item7 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 723px;
+    left: 25%
+  }
+  .grid > .tall3 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 462px;
+    width: 25%;
+    top: 723px;
+    left: 50%
+  }
+  .grid > .item8 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 723px;
+    left: 75%
+  }
+  .grid > .item9 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 964px;
+    left: 25%
+  }
+  .grid > .item10 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 964px;
+    left: 75%
+  }
+  .grid > .wide3 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 50%;
+    top: 1205px;
+    left: 0
+  }
+  .grid > .item11 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 1205px;
+    left: 50%
+  }
+  .grid > .tall4 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 462px;
+    width: 25%;
+    top: 1205px;
+    left: 75%
+  }
+  .grid > .wide4 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 50%;
+    top: 1446px;
+    left: 0
+  }
+  .grid > .item12 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 1446px;
+    left: 50%
+  }
+}

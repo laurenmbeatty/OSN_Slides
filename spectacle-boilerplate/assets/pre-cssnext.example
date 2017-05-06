@@ -1,0 +1,22 @@
+/* In a large code base, this technique works great for styles that repeat throughout the site */
+:root {
+  --header-theme: {
+    padding: 12px 0 10px 10px;
+    background-color: #b9d989;
+    margin: 20px 0 2px 0;
+  };
+  --header-font: {
+    font-family: "roboto";
+    font-weight: 400;
+    font-size: 20px;
+    color: #65675e;
+    margin: 0;
+  };
+}
+
+.programs-header {
+  @apply --header-theme;
+}
+.programs-header h3 {
+  @apply --header-font;
+}
