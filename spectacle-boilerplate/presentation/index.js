@@ -143,9 +143,9 @@ export default class Presentation extends React.Component {
           </Heading>
           <List style={listStyle} textColor="primary">
             <ListItem>Node.JS module</ListItem>
-            <ListItem>Parses CSS -> AST (abstract syntax tree)</ListItem>
+            <ListItem>Parses CSS -&gt; AST (abstract syntax tree)</ListItem>
             <ListItem>Plugin performs functionality</ListItem>
-            <ListItem>AST -> String -> File</ListItem>
+            <ListItem>AST -&gt; String -&gt; File</ListItem>
           </List>
         </Slide>
         <Slide transition={["slide"]} bgColor="blue">
@@ -371,6 +371,16 @@ export default class Presentation extends React.Component {
                 target="_blank"
               >
                 Plugin Development API
+              </Link>
+
+            </ListItem>
+            <ListItem transition={["zoom"]}>
+              <Link
+                textColor="primary"
+                href="https://coggle.it/diagram/WNEjE6UN2QABtWtn/d2e7c0bbb2eb211016dcbf87917739b5f56dd6deafcb4ace12cae788e4b63766"
+                target="_blank"
+              >
+                Link to my research Coggle
               </Link>
             </ListItem>
           </List>
