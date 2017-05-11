@@ -14,7 +14,9 @@ import {
   Text,
   CodePane,
   Link,
-  Appear
+  Appear,
+  Layout,
+  Image
 } from "spectacle";
 
 // Import image preloader util
@@ -31,7 +33,12 @@ const images = {
   city: require("../assets/city.jpg"),
   kat: require("../assets/kat.png"),
   logo: require("../assets/formidable-logo.svg"),
-  markdown: require("../assets/markdown.png")
+  markdown: require("../assets/markdown.png"),
+  gulp: require("../assets/gulp-small.png"),
+  grunt: require("../assets/grunt-small.png"),
+  webpack: require("../assets/webpack-small.png"),
+  rollup: require("../assets/rollup-small.png"),
+  postcss: require("../assets/postcss-small.png")
 };
 
 preloader(images);
@@ -142,10 +149,18 @@ export default class Presentation extends React.Component {
             What is it really?
           </Heading>
           <List style={listStyle} textColor="primary">
-            <ListItem>Node.JS module</ListItem>
-            <ListItem>Parses CSS -&gt; AST (abstract syntax tree)</ListItem>
-            <ListItem>Plugin performs functionality</ListItem>
-            <ListItem>AST -&gt; String -&gt; File</ListItem>
+            <Appear fid="8">
+              <ListItem>Node.JS module</ListItem>
+            </Appear>
+            <Appear fid="9">
+              <ListItem>Parses CSS -&gt; AST (abstract syntax tree)</ListItem>
+            </Appear>
+            <Appear fid="10">
+              <ListItem>Plugin performs functionality</ListItem>
+            </Appear>
+            <Appear fid="11">
+              <ListItem>AST -&gt; String -&gt; File</ListItem>
+            </Appear>
           </List>
         </Slide>
         <Slide transition={["slide"]} bgColor="blue">
@@ -153,14 +168,30 @@ export default class Presentation extends React.Component {
             What can it do?
           </Heading>
           <List style={listStyle} textColor="primary">
-            <ListItem>Work with OR replace preprocessor</ListItem>
-            <ListItem>Lints CSS</ListItem>
-            <ListItem>Minifies/Optimizes</ListItem>
-            <ListItem>Autoprefixer</ListItem>
-            <ListItem>Like Babel for CSS</ListItem>
-            <ListItem>Create Style Guides</ListItem>
-            <ListItem>Compress images</ListItem>
-            <ListItem>Open Source--Low barrier of entry</ListItem>
+            <Appear fid="11">
+              <ListItem>Work with OR replace preprocessor</ListItem>
+            </Appear>
+            <Appear fid="12">
+              <ListItem>Lints CSS</ListItem>
+            </Appear>
+            <Appear fid="13">
+              <ListItem>Minifies/Optimizes</ListItem>
+            </Appear>
+            <Appear fid="14">
+              <ListItem>Autoprefixer</ListItem>
+            </Appear>
+            <Appear fid="15">
+              <ListItem>Like Babel for CSS</ListItem>
+            </Appear>
+            <Appear fid="16">
+              <ListItem>Manage Fonts</ListItem>
+            </Appear>
+            <Appear fid="17">
+              <ListItem>Compress images</ListItem>
+            </Appear>
+            <Appear fid="18">
+              <ListItem>Open Source--Low barrier of entry</ListItem>
+            </Appear>
           </List>
         </Slide>
         <Slide transition={["zoom"]} bgColor="blue">
@@ -168,11 +199,21 @@ export default class Presentation extends React.Component {
             Why I Chose PostCSS
           </Heading>
           <List style={listStyle} textColor="primary">
-            <ListItem>Minification</ListItem>
-            <ListItem>Custom Properties/variables</ListItem>
-            <ListItem>Sass features</ListItem>
-            <ListItem>Needed something Flexible/Low Overhead</ListItem>
-            <ListItem>Many solutions with one tool</ListItem>
+            <Appear fid="19">
+              <ListItem>Minification</ListItem>
+            </Appear>
+            <Appear fid="20">
+              <ListItem>Custom Properties/CSS variables</ListItem>
+            </Appear>
+            <Appear fid="21">
+              <ListItem>Sass features</ListItem>
+            </Appear>
+            <Appear fid="22">
+              <ListItem>Needed something Flexible/Low Overhead</ListItem>
+            </Appear>
+            <Appear fid="23">
+              <ListItem>Many solutions with one tool</ListItem>
+            </Appear>
           </List>
         </Slide>
         <Slide transition={["slide"]} bgColor="secondary">
@@ -181,16 +222,16 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
         <Slide transition={["zoom"]} bgColor="blue">
-          <Heading size={1} fit lineHeight={1} textColor="primary">
+          <Heading size={1} fit lineHeight={1} textColor="primary" margin="0 0 30px 0">
             Build Tools
           </Heading>
-          <List style={listStyle} textColor="primary">
-            <ListItem>Gulp</ListItem>
-            <ListItem>Grunt</ListItem>
-            <ListItem>Webpack</ListItem>
-            <ListItem>Rollup</ListItem>
-            <ListItem>CLI</ListItem>
-          </List>
+          <Layout fit>
+                <Appear><Image display="flex" src={images.gulp.replace("/", "")}/></Appear>
+                <Appear><Image src={images.grunt.replace("/", "")}/></Appear>
+                <Appear><Image src={images.webpack.replace("/", "")}/></Appear>
+                <Appear><Image src={images.rollup.replace("/", "")}/></Appear>
+                <Appear><Image src={images.postcss.replace("/", "")}/></Appear>
+            </Layout>
         </Slide>
         <Slide transition={["slide"]} bgColor="teal">
           <Heading size={1} fit lineHeight={1} textColor="primary">
@@ -212,9 +253,15 @@ export default class Presentation extends React.Component {
             cssnext()
           </Heading>
           <List style={listStyle} textColor="primary">
-            <ListItem>Use Future CSS Today</ListItem>
-            <ListItem>No Waiting for Browser Support</ListItem>
-            <ListItem>My favorite: Custom Properties</ListItem>
+            <Appear fid="1">
+              <ListItem>Use Future CSS Today</ListItem>
+            </Appear>
+            <Appear fid="2">
+              <ListItem>No Waiting for Browser Support</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>My favorite: Custom Properties</ListItem>
+            </Appear>
           </List>
         </Slide>
         <Slide transition={["zoom"]} bgColor="teal">
@@ -241,7 +288,9 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit lineHeight={1} textColor="primary">
             PreCSS
           </Heading>
-          <Text textColor="primary">Most Sass Features</Text>
+          <Appear fid="1">
+            <Text textColor="primary">Most Sass Features</Text>
+          </Appear>
         </Slide>
         <Slide transition={["slide"]} bgColor="teal">
           <Heading size={1} fit lineHeight={1} textColor="white">
@@ -278,22 +327,30 @@ export default class Presentation extends React.Component {
             Grid-Kiss
           </Heading>
           <List style={listStyle} textColor="primary">
-            <ListItem>Draw a grid</ListItem>
-            <ListItem>Essentially WYSIWYG</ListItem>
-            <ListItem>Fun but finicky</ListItem>
-            <ListItem>
-              I used
-              {" "}
-              <Link
-                href="http://asciiflow.com/"
-                target="_blank"
-                textColor="primary"
-              >
-                ASCII flow
-              </Link>
-              {" "}
-              to generate
-            </ListItem>
+            <Appear fid="1">
+              <ListItem>Draw a grid</ListItem>
+            </Appear>
+            <Appear fid="2">
+              <ListItem>Essentially WYSIWYG</ListItem>
+            </Appear>
+            <Appear fid="3">
+              <ListItem>Fun but finicky</ListItem>
+            </Appear>
+            <Appear fid="4">
+              <ListItem>
+                I used
+                {" "}
+                <Link
+                  href="http://asciiflow.com/"
+                  target="_blank"
+                  textColor="primary"
+                >
+                  ASCII flow
+                </Link>
+                {" "}
+                to generate
+              </ListItem>
+            </Appear>
           </List>
         </Slide>
         <Slide transition={["slide"]} bgColor="teal">
@@ -322,7 +379,9 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["zoom"]} bgColor="blue">
           <Heading size={1} textColor="primary">UnCSS</Heading>
-          <Text textColor="primary">Removes Unused CSS</Text>
+          <Appear fid="1">
+            <Text textColor="primary">Removes Unused CSS</Text>
+          </Appear>
         </Slide>
         <Slide transition={["slide"]} bgColor="teal">
           <Heading size={1} fit lineHeight={1} textColor="primary">
@@ -337,52 +396,62 @@ export default class Presentation extends React.Component {
         <Slide transition={["zoom"]} bgColor="blue" textColor="blue">
           <Heading size={6} textColor="primary" caps>PostCSS Resources</Heading>
           <List style={listStyle}>
-            <ListItem transition={["zoom"]}>
-              <Link
-                textColor="primary"
-                href="https://github.com/postcss/postcss/tree/master/docs"
-                target="_blank"
-              >
-                Docs
-              </Link>
-            </ListItem>
-            <ListItem transition={["zoom"]}>
-              <Link
-                textColor="primary"
-                href="http://postcss.parts/"
-                target="_blank"
-              >
-                PostCSS Parts---Plugins by Feature
-              </Link>
-            </ListItem>
-            <ListItem transition={["zoom"]}>
-              <Link
-                textColor="primary"
-                href="https://webdesign.tutsplus.com/series/postcss-deep-dive--cms-889"
-                target="_blank"
-              >
-                PostCSS Deep Dive
-              </Link>
-            </ListItem>
-            <ListItem transition={["zoom"]}>
-              <Link
-                textColor="primary"
-                href="http://api.postcss.org/"
-                target="_blank"
-              >
-                Plugin Development API
-              </Link>
+            <Appear fid="1">
+              <ListItem transition={["zoom"]}>
+                <Link
+                  textColor="primary"
+                  href="https://github.com/postcss/postcss/tree/master/docs"
+                  target="_blank"
+                >
+                  Docs
+                </Link>
+              </ListItem>
+            </Appear>
+            <Appear fid="2">
+              <ListItem transition={["zoom"]}>
+                <Link
+                  textColor="primary"
+                  href="http://postcss.parts/"
+                  target="_blank"
+                >
+                  PostCSS Parts---Plugins by Feature
+                </Link>
+              </ListItem>
+            </Appear>
+            <Appear fid="3">
+              <ListItem transition={["zoom"]}>
+                <Link
+                  textColor="primary"
+                  href="https://webdesign.tutsplus.com/series/postcss-deep-dive--cms-889"
+                  target="_blank"
+                >
+                  PostCSS Deep Dive
+                </Link>
+              </ListItem>
+            </Appear>
+            <Appear fid="4">
+              <ListItem transition={["zoom"]}>
+                <Link
+                  textColor="primary"
+                  href="http://api.postcss.org/"
+                  target="_blank"
+                >
+                  Plugin Development API
+                </Link>
 
-            </ListItem>
-            <ListItem transition={["zoom"]}>
-              <Link
-                textColor="primary"
-                href="https://coggle.it/diagram/WNEjE6UN2QABtWtn/d2e7c0bbb2eb211016dcbf87917739b5f56dd6deafcb4ace12cae788e4b63766"
-                target="_blank"
-              >
-                Link to my research Coggle
-              </Link>
-            </ListItem>
+              </ListItem>
+            </Appear>
+            <Appear fid="5">
+              <ListItem transition={["zoom"]}>
+                <Link
+                  textColor="primary"
+                  href="https://coggle.it/diagram/WNEjE6UN2QABtWtn/d2e7c0bbb2eb211016dcbf87917739b5f56dd6deafcb4ace12cae788e4b63766"
+                  target="_blank"
+                >
+                  Link to my research Coggle
+                </Link>
+              </ListItem>
+            </Appear>
           </List>
         </Slide>
         <Slide transition={["slide"]} bgColor="secondary" textColor="primary">
